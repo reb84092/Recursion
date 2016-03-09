@@ -2,7 +2,7 @@ package recursion.view;
 
 import java.awt.Color;
 import javax.swing.*;
-import RecursionController.controller.RecursionController;
+import recursion.controller.RecursionController;
 
 /**
  * @author rbar3155
@@ -12,7 +12,7 @@ public class RecursionPanel extends JPanel
 {
 	private RecursionController baseController;
 	private SpringLayout baseLayout;
-	private JButton fibbonacciButton;
+	private JButton fibonacciButton;
 	private JButton factorialButton;
 	private JTextField inputField;
   	private JTextArea resultsArea;
@@ -25,7 +25,7 @@ public class RecursionPanel extends JPanel
   		fibonacciButton = new JButton("Get the Fibonacci sequence for this number");
   		factorialButton = new JButton("Get n!");
   		inputField = new JTextField(20);
-  		resultsArea = newJTextArea(10, 20);
+  		resultsArea = new JTextArea(10, 20);
   		
   		setupPanel();
   		setupLayout();
@@ -42,6 +42,16 @@ public class RecursionPanel extends JPanel
   		this.setBackground(Color.MAGENTA);
   		resultsArea.setWrapStyleWord(true);
   		resultsArea.setLineWrap(true);
+  	}
+  	
+  	private void setupLayout()
+  	{
+  		
+  	}
+  	
+  	private void setupListeners()
+  	{
+  		
   	}
   
 }
