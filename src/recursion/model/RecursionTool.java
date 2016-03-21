@@ -35,4 +35,18 @@ public class RecursionTool
 			return position * getFactorialNumber(position - 1);
 		}
 	}
+	
+	public int getIterativeNumber(int n)
+	{
+		int x = 0, y = 1, z = 1;
+		for (int i = 0; i < n; i++)
+		{
+			x = y;
+			y = z;
+			z = x + y;
+			
+		}
+		return x;
+	}
+		
 }
